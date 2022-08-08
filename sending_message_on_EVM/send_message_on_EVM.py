@@ -48,6 +48,6 @@ if __name__ == "__main__":
     # decode the message that was sent
     print(bytearray.fromhex(tx_out['input'].split('x')[1]).decode())
     
-    # check the latest balance of acccouts
+    # check the latest balance of acccounts
     for acc in accounts[:2]:
         print(acc, w3.fromWei(w3.eth.getBalance(acc), 'ether') )
